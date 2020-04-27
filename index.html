@@ -10,8 +10,31 @@
 </head>
 <style>
 	body{
+		margin-top: 100px;
 		background-color:#121212;
 	}
+	tr {
+        width: 100%;
+        display: inline-table;
+        table-layout: fixed;
+        }
+        
+        table{
+         height:260px;             
+         display: -moz-groupbox;   
+        }
+        tbody{
+          overflow-y: scroll;      
+          height: 260px;         
+          width: 100%;
+          position: absolute;
+        }
+		::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+
 </style>
 <body>
 <div class="container">
@@ -21,11 +44,14 @@
 			<div class="col-lg-12 bg-dark p-3">
 				<div>
 						<table style="width: 100%; font-size: 28px; " class="table table-dark "> 
+							<thead>
+								<tr>
+								  <th>Time</th>
+								  <th>ID</th>
+								</tr>
+							  </thead>
 								<tbody id="dataRow">
-									<tr>
-										<td>Times</td>
-										<td>ID</td>
-									</tr>
+								
 								</table>
 				
 				</div>
