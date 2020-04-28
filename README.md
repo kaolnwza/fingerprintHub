@@ -2,7 +2,7 @@
 
 > ![Image description](https://raw.githubusercontent.com/kaolnwza/fingerprintHub/master/img/img1.jpg) ![Image description](https://raw.githubusercontent.com/kaolnwza/fingerprintHub/master/img/img22.jpg)
 
-### Description
+## Description
 > ระบบสแกนลายนิ้วมือเพื่อปลดล็อคประตู ควบคุมการทำงานโดย nodeMCU
 
 ## Feature
@@ -14,7 +14,7 @@
 - เพื่อต่อยอดใช้ในประตูจริงในอนาคต
 - ใช้เป็นระบบเพื่อสร้างความปลอดภัยในบ้าน
 
-### Contributors
+## Contributors
 |รหัสนักศึกษา| ชื่อ-นามสกุล | Github |
 | -- | -- | -- |
 | 62070101 | นาย นพดน พานวง | [SilverSky9](https://github.com/SilverSky9) |
