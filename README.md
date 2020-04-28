@@ -7,7 +7,7 @@
 
 ## Link
 - [Project Video Demo](https://youtu.be/zU5JManwhrQ)
-- [Used History Website](https://kaolnwza.github.io/fingerprintHub/)
+- [Realtime Database Website](https://kaolnwza.github.io/fingerprintHub/)
 
 ## Feature
 - สแกนลายนิ้วมือด้วย Fingerprint Sensor
