@@ -4,6 +4,7 @@
 
 ## Description
 > ระบบสแกนลายนิ้วมือเพื่อปลดล็อคประตู ควบคุมการทำงานโดย nodeMCU
+> ใช้การจำลองโดยใช้ Servo Motor กับประตูไม้จำลองขนาดเล็ก
 
 ## Link
 - [Project Video Demo](https://youtu.be/zU5JManwhrQ)
@@ -13,6 +14,14 @@
 - สแกนลายนิ้วมือด้วย Fingerprint Sensor
 - ส่งข้อมูลไปยังเว็บไซต์เมื่อมีของผู้ใช้งานที่สแกนลายนิ้วมือ ณ เวลานั้น 
 - ควบคุมการทำงานโดย nodeMCU
+
+## Built With
+- ESP8266 NodeMCU V2
+- Fingerprint Sensor
+- Servo Motor
+- Arduino
+- Adafruit
+- Firebase
 
 ## Purpose
 - เพื่อต่อยอดใช้ในประตูจริงในอนาคต
