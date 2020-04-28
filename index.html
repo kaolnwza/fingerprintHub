@@ -1,105 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<title>Document</title>
-</head>
-<style>
-	body{
-		margin-top: 100px;
-		background-color:#121212;
-	}
-	tr {
-        width: 100%;
-        display: inline-table;
-        table-layout: fixed;
-        }
-        
-        table{
-         height:260px;             
-         display: -moz-groupbox;   
-        }
-        tbody{
-          overflow-y: scroll;      
-          height: 260px;         
-          width: 100%;
-          position: absolute;
-        }
-		::-webkit-scrollbar {
-  width: 0px;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin-top: 100px;
+      background-color: #121212;
+    }
+    tr {
+      width: 100%;
+      display: inline-table;
+      table-layout: fixed;
+    }
+    table {
+      height: 260px;
+      display: -moz-groupbox;
+    }
+    tbody {
+      overflow-y: scroll;
+      height: 260px;
+      width: 100%;
+      position: absolute;
+    }
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="row mt-5" style="font-family: bangna new; color: white;">
+        <div class="col-lg-12">
+          <h1 class="text-white" id="comment">Realtime Database</h1>
+          <hr class="bg-white" />
+          <div class="col-lg-12 bg-dark p-3">
+            <div>
+              <table
+                style="width: 100%; font-size: 28px; "
+                class="table table-dark "
+              >
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>ID</th>
+                  </tr>
+                </thead>
+                <tbody id="dataRow"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
 
-
-
-</style>
-<body>
-<div class="container">
-	<div class="row mt-5" style="font-family: bangna new; color: white;">
-		<div class="col-lg-12">
-			<h1 class="text-white" id="comment">Realtime Database</h1><hr class="bg-white">
-			<div class="col-lg-12 bg-dark p-3">
-				<div>
-						<table style="width: 100%; font-size: 28px; " class="table table-dark "> 
-							<thead>
-								<tr>
-								  <th>Time</th>
-								  <th>ID</th>
-								</tr>
-							  </thead>
-								<tbody id="dataRow">
-								
-								</table>
-				
-				</div>
-		</div>
-	
-		</div>
-  </div>
-</div>
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
+    <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyAXtKglDUlDCfPwuVscWNBW1PxVkD1Lygk",
-    authDomain: "com-pro-a93c8.firebaseapp.com",
-    databaseURL: "https://com-pro-a93c8.firebaseio.com",
-    projectId: "com-pro-a93c8",
-    storageBucket: "com-pro-a93c8.appspot.com",
-    messagingSenderId: "583855445787",
-    appId: "1:583855445787:web:6044a515774f1a79d165be",
-    measurementId: "G-998F6HDZJ0"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAXtKglDUlDCfPwuVscWNBW1PxVkD1Lygk",
+        authDomain: "com-pro-a93c8.firebaseapp.com",
+        databaseURL: "https://com-pro-a93c8.firebaseio.com",
+        projectId: "com-pro-a93c8",
+        storageBucket: "com-pro-a93c8.appspot.com",
+        messagingSenderId: "583855445787",
+        appId: "1:583855445787:web:6044a515774f1a79d165be",
+        measurementId: "G-998F6HDZJ0"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
 
-let myFirebase = firebase.database();
-let dataRef = myFirebase.ref('/ID');
-document.getElementById("commentBtn").onclick = function() {
-let lcomment = document.getElementById('idComment').value;
-let ltime = Date.now();
-dataRef.push({
-comment: lcomment,
-time: ltime
-});
-};
-</script>
+      let myFirebase = firebase.database();
+      let dataRef = myFirebase.ref("/ID");
+      document.getElementById("commentBtn").onclick = function() {
+        let lcomment = document.getElementById("idComment").value;
+        let ltime = Date.now();
+        dataRef.push({
+          comment: lcomment,
+          time: ltime
+        });
+      };
+    </script>
 
-<script>
-dataRef.limitToLast(5).on('child_added', function(childSnapshot) {
-let item = childSnapshot.val()
-document.getElementById('dataRow').innerHTML += "<tr><td>" + new Date(item.timestamp).toLocaleTimeString("en-US") + "</td><td>" + item.ID
-});
-</script>
-</body>
+    <script>
+      dataRef.limitToLast(5).on("child_added", function(childSnapshot) {
+        let item = childSnapshot.val();
+        document.getElementById("dataRow").innerHTML +=
+          "<tr><td>" +
+          new Date(item.timestamp).toLocaleTimeString("en-US") +
+          "</td><td>" +
+          item.ID;
+      });
+    </script>
+  </body>
 </html>
