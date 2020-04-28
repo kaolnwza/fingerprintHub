@@ -4,7 +4,7 @@
 
 ## Description
 > ระบบสแกนลายนิ้วมือเพื่อปลดล็อคประตู ควบคุมการทำงานโดย nodeMCU
-> ใช้การจำลองโดยใช้ Servo Motor กับประตูไม้จำลองขนาดเล็ก
+> ใช้การจำลองการใช้งานโดย Microcontroller ร่วมกับ Fingerprint Sensor และ Servo Motor กับประตูไม้จำลองขนาดเล็ก
 
 ## Link
 - [Project Video Demo](https://youtu.be/zU5JManwhrQ)
