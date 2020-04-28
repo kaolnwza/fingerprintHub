@@ -1,8 +1,11 @@
 # Fingerprint Hub
+
+![Image description](https://raw.githubusercontent.com/kaolnwza/fingerprintHub/master/img/S__4038658.jpg)
+
 ### Description
 > ระบบสแกนลายนิ้วมือเพื่อปลดล็อคประตู ควบคุมการทำงานโดย nodeMCU
 
-##Feature
+## Feature
 - สแกนลายนิ้วมือด้วย Fingerprint Sensor
 - ส่งข้อมูลไปยังเว็บไซต์เมื่อมีของผู้ใช้งานที่สแกนลายนิ้วมือ ณ เวลานั้น
 - ควบคุมการทำงานโดย nodeMCU
