@@ -31,6 +31,6 @@
 ### Contributors
 |รหัสนักศึกษา| ชื่อ-นามสกุล | Github |
 | -- | -- | -- |
-| 62070101 | นาย นพดน พานวงศ์ | [SilverSky9](https://github.com/SilverSky9) |
+| 62070101 | นาย นพดล พานวงศ์ | [SilverSky9](https://github.com/SilverSky9) |
 | 62070116 | นาย ปวริศ วงสาเอียด |[PwrFr](https://github.com/PwrFr) |
 | 62070178 | นาย ศิลปวิชญ์ ฤทธิ์นํ้าคํา | [kaolnwza](https://github.com/kaolnwza) |
