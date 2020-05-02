@@ -1,4 +1,4 @@
-![Image](https://raw.githubusercontent.com/kaolnwza/fingerprintHub/master/img/asdasdasd.jpg)
+![Image](https://raw.githubusercontent.com/kaolnwza/fingerprintHub/master/img/poster.jpg)
 # Fingerprint Hub
 
 ![Image description](https://raw.githubusercontent.com/kaolnwza/fingerprintHub/master/img/img15003.jpg)  ![Image description](https://raw.githubusercontent.com/kaolnwza/fingerprintHub/master/img/img15004.jpg) 
